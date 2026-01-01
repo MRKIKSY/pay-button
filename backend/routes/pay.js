@@ -19,7 +19,7 @@ router.post("/init", async (req, res) => {
       {
         email,
         amount: Number(amount) * 100,
-        callback_url: "http://localhost:3000/paystack-success",
+        callback_url: "https://pay-button.onrender.com/paystack-success", 
         metadata: {
           contributor_name: name,
           purpose: "LEGAL ACTIONS AGAINST TMT TRAVEL AGENCY"
